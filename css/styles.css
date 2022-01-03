@@ -16,3 +16,11 @@
  #books {
      color: white;
  }
+
+.name-list-item {
+    list-style-type: none;
+}
+
+.container-fluid {
+    margin-top: 100px;
+}
