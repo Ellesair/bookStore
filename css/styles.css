@@ -16,3 +16,7 @@
  #books {
      color: white;
  }
+
+ ul.name-list-item {
+    list-style-image: url('');
+    }
