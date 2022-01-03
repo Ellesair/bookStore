@@ -22,7 +22,27 @@
      justify-content: center;
  }
 
- li.name-list-item {
+ ul.name-list {
+   display: grid;
+
+}
+
+ li.name-list-itemMB {
     list-style-image: url('https://img0.etsystatic.com/000/0/5311612/il_75x75.190235982.jpg');
     
-    }
+}
+    
+li.name-list-itemKL {
+    list-style-image: url('https://img0.etsystatic.com/000/0/5311612/il_75x75.190235982.jpg');
+        
+}
+
+li.name-list-itemEO {
+    list-style-image: url('https://img0.etsystatic.com/000/0/5311612/il_75x75.190235982.jpg');
+        
+}
+
+li.name-list-itemAR {
+    list-style-image: url('');
+        
+}
