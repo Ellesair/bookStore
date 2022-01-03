@@ -17,6 +17,11 @@
      color: white;
  }
 
+ h1.heading{
+     display: flex;
+     justify-content: center;
+ }
+
  li.name-list-item {
     list-style-image: url('https://img0.etsystatic.com/000/0/5311612/il_75x75.190235982.jpg');
     
