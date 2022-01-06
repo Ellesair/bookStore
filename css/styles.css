@@ -23,4 +23,49 @@
 
 .container-fluid {
     margin-top: 100px;
+ h1.heading{
+     display: flex;
+     justify-content: center;
+ }
+
+ ul.name-list {
+   display: grid;
+
 }
+
+ li.name-list-itemMB {
+    list-style-image: url('https://img0.etsystatic.com/000/0/5311612/il_75x75.190235982.jpg');
+    
+}
+    
+li.name-list-itemKL {
+    list-style-image: url('https://img0.etsystatic.com/000/0/5311612/il_75x75.190235982.jpg');
+        
+}
+
+li.name-list-itemEO {
+    list-style-image: url('https://img0.etsystatic.com/000/0/5311612/il_75x75.190235982.jpg');
+        
+}
+
+li.name-list-itemAR {
+    list-style-image: url('');
+        
+}
+
+
+
+.head {
+    margin-top: 200px;
+}
+
+body {
+    padding-top: 65px;
+  }
+
+
+  @media (max-width: 979px) {
+    body {
+      padding-top: 0px;
+    }
+  }
