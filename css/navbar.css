@@ -1,0 +1,58 @@
+button{
+    all: unset;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+
+svg {
+    color: #fff;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+
+
+.container {
+    display: flex;
+    background-color: #160640;
+    color: #ffffff;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.container div{
+    border: 1px #000000 solid;
+    padding: 10px;
+}
+
+.nav-link1 {
+    flex:1;
+    order: 1;
+}
+
+.nav-link2 {
+    flex:1;
+    order: 3;
+}
+
+.nav-link3 {
+    flex: 1;
+    order: 2;
+}
+
+.nav-link4 {
+    flex: 1;
+    order: 4;
+}
+
+.nav-link5 {
+    flex: 1;
+    order: 5;
+}
