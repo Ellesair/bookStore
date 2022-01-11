@@ -23,11 +23,13 @@
 
 .container-fluid {
     margin-top: 100px;
- h1.heading{
+}
+ h1.heading {
      display: flex;
      justify-content: center;
  }
 
+/*
  ul.name-list {
    display: grid;
 
@@ -52,7 +54,7 @@ li.name-list-itemAR {
     list-style-image: url('');
         
 }
-
+*/
 
 
 .head {
@@ -60,12 +62,21 @@ li.name-list-itemAR {
 }
 
 body {
-    padding-top: 65px;
+    padding-top: 100px;
   }
-
-  body {background-color: coral;}
+  
   @media (max-width: 979px) {
     body {
       padding-top: 0px;
     }
   }
+
+  .imgs {
+      max-width: auto;
+      max-height: 150px;
+  }
+
+.heading-section {
+    background-color: purple;
+    color: white;
+}
