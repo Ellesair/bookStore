@@ -77,6 +77,6 @@ body {
   }
 
 .heading-section {
-    background-color: purple;
+    background-color: hsl(255, 50%, 56%);
     color: white;
 }
