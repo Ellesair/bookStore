@@ -47,11 +47,14 @@
           
       </nav>
       <!--^^^^^THE NAVBAR CODE^^^^^-->
-      <div class='mt-5'>
+
+      <div class='mt-3'>
         <h1 class="heading"> <strong>Book Entry Form</strong> </h1>
       </div>
 
     <form>
+
+      <!--Form row Book Title, Author, and ProductDescription-->
         <div class="form-row">
         <div class="form-group col-lg-6">
           <label for="formInput1"><h5>Book Title</h5></label>
@@ -69,8 +72,8 @@
         <textarea type="textarea" class="form-control" id="formInput3" rows='5' placeholder="Enter product description here..."></textarea>
         </div>
 
+        <!--FOrm row Publisher and Publication Date-->
         <div class="form-row">
-               
                 <div class="form-group col-lg-6">
                     <label for="formInput10"><h5>Publisher</h5></label>
                     <input type="text" class="form-control" id="formInput10" placeholder="Enter publisher here...">
@@ -80,7 +83,7 @@
                     <input type="text" class="form-control" id="formInput5" placeholder="Enter publication date here...">
                 </div>
         </div>
-
+        <!--Form row Book Dimensions and Page Sample-->
         <div class="form-row">
             <div class="form-group col-lg-6">
             <label for="formInput6"><h5>Dimensions</h5></label>
@@ -92,20 +95,17 @@
 
             <div class="form-group col-lg-6">
                 <label for="formInput7"><h5>Page Sample</h5></label>
-                <textarea type="textarea" class="form-control" id="formInput7" rows='10' placeholder="Enter product description here..."></textarea>
+                <textarea type="textarea" class="form-control" id="formInput7" rows='10' placeholder="Enter page sample here..."></textarea>
             </div>
         </div>
 
-
+        <!--Form row Cover type, Price, and number of pages-->
         <div class="form-row">
             <div class="form-group col-lg-4">
             <label for="formInput8"><h5>Cover Type</h5></label>
-            <div class="radio">
+            <br>
                 <label class="radio-inline"><input type="radio" name="cover">Hardcover</label>
-              </div>
-              <div class="radio">
                 <label class="radio-inline"><input type="radio" name="cover">Softcover</label>
-              </div>
             </div>
 
             <div class="form-group col-lg-4">
@@ -119,6 +119,7 @@
             </div>
         </div>
 
+        <!--Submit button-->
         <div class="text-center">
         <button type="submit" class="btn btn-primary mb-3 justify-content: center">Submit Entry</button>
         </div>
