@@ -247,6 +247,8 @@ svg {
 
   .vertical-menu a:hover {
     background-color: #442159;
+    text-decoration: none;
+    color: #fff;
   }
 
   .vertical-menu a.active {
