@@ -1,3 +1,8 @@
+body {
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
 #search-bar {
     width: 500px;
 }
@@ -23,6 +28,15 @@
      display: flex;
      justify-content: center;
  }
+
+#about-container {
+    max-width: 1000px;
+    max-height: 2000px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
 
  ul.name-list {
    display: grid;
