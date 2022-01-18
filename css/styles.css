@@ -134,6 +134,7 @@ button {
   height: 44px;
 }
 
+
 svg {
   color: #fff;
   fill: currentColor;
@@ -145,6 +146,7 @@ svg {
 .fas {
   color: #fff;
 }
+
 
 @media screen and (max-width: 1000px) {
   form {
@@ -330,6 +332,7 @@ li.name-list-itemEO {
 }
 
 li.name-list-itemAR {
+
   list-style-image: url("");
 }
 
@@ -337,3 +340,4 @@ li.name-list-itemAR {
   padding-top: 100px;
   padding-left: 20px;
 }
+
