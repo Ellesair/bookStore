@@ -57,33 +57,45 @@
   <h1 class="heading"> <strong>Login</strong> </h1>
 </div>
 
-
     <form>
         <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
+          <div class="col-md-1"></div>
+          <div class="form-group col-md-4">
+            <label for="inputEmail4"><h4>Email</h4></label>
             <input type="email" class="form-control" id="inputEmail4">
           </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
+          <div class="col-md-2"></div>
+          <div class="form-group col-md-4">
+            <label for="inputPassword4"><h4>Password</h4></label>
             <input type="password" class="form-control" id="inputPassword4">
           </div>
+          <div class="col-md-1"></div>
         </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
+
         <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
+            <div class="col-md-1"></div>
+            <div class="form-group col-md-6">
+            <label for="inputAddress"><h4>Address</h4></label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+          <div class="col-md-1"></div>
+            <div class="form-group">
+            <label for="inputAddress2 col-md-3"><h4>Address 2</h4></label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apt, studio, or unit">
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+        
+        <div class="form-row">
+          <div class="col-md-1"></div>
+          <div class="form-group col-md-4">
+            <label for="inputCity"><h4>City</h4></label>
             <input type="text" class="form-control" id="inputCity">
           </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">State</label>
+          <div class="col-md-1"></div>
+          <div class="form-group col-md-2">
+            <label for="inputState"><h4>State</h4></label>
             <select id="inputState" class="form-control">
               <option selected>Choose...</option>
               <option>AL</option><option>AK</option><option>AZ</option>
@@ -106,21 +118,26 @@
 
             </select>
           </div>
+          <div class="col-md-1"></div>
           <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
+            <label for="inputZip"><h4>Zip Code</h4></label>
             <input type="text" class="form-control" id="inputZip">
           </div>
+          <div class="col-md-1"></div>
         </div>
 
+        <div class="col-md-1"></div>
+       
+      <div class="form-row mx-5 my-5">
+        <button type="submit" class="btn btn-primary px-3">Sign in</button>
         <div class="form-group">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Remember Me
-            </label>
-          </div>
-       
-        <button type="submit" class="btn btn-primary">Sign in</button>
+            <label class="form-check-label" for="gridCheck">Remember Me</label>
+            </div>
+        </div>
+       </div>
+        
       </form>
 
     <!-- Footer -->
