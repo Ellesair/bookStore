@@ -95,11 +95,15 @@
 
 <!-- Begin Product Body Info -->
 
-    <div class="product-grid">
+    <div class="product-grid-container">
+
         <div class="product-visual">
-            <img src="img/book1.png" class="bookImg-closeup">
-            <button type="button" class="addCartBtn purchaseButton general-button">Add to Cart</button>
-            <button type="button" class="wishlist-button wishlistButton general-button">+ Wishlist</button>
+            <div class="product-visual-image">
+                <img src="img/book1.png" class="bookimg-closeup">
+            </div>
+
+            <div class="prod-button"><button type="button" class="product-add general-button">Add to Cart</button></div>
+            <div class="prod-button"><button type="button" class="wishlist-add wishlistButton general-button">+ Wishlist</button></div>
         </div>
 
         <div class="product-info">
@@ -108,43 +112,145 @@
             <p class="product-price">$$Price</p>
             <p class="product-details">Product Details</p>
             <p class="product-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat magni minus dolores, ab eveniet aut, architecto dolorum nihil atque officiis commodi necessitatibus distinctio consequuntur laudantium quisquam possimus libero quae eos?</p>
-            <h6 class="product-isbn">ISBN #</h6>
-            <h6 class="product-publisher">Publisher's Name</h6>
-            <h6 class="product-page-count"># of pages</h6>
-            <h6 class="product-publication-date">publication date</h6>
+            <h6 class="prod-gen product-isbn">ISBN #</h6>
+            <h6 class="prod-gen product-publisher">Publisher's Name:</h6>
+            <h6 class="prod-gen product-page-count">Page Count:</h6>
+            <h6 class="prod-gen product-publication-date">Publication Date:</h6>
         </div>
+
+    </div>
 
 <!-- End Product Body Info -->
 
-<!-- Begin Bottom Carousels -->
+<!-- Begin Suggested Carousel -->
 
-        <hr class="hr-bottom">
-        <h2>Suggested Books</h2>
-        <hr class="hr-bottom">
-
-        <div class="container-book-carousel">
-            <div class="card">
-              <a href="#"><img src="img/book2.png" class="bookImg"></a>
-                <a href="#" class="bookTitle">The JavaScript Diet</a>
-                <h6 class="bookPrice">$FREE.99</h6>
-            </div>
-        </div>
-
-        <hr class="hr-bottom">
-        <h2>Bestsellers</h2>
-        <hr class="hr-bottom">
-
-        <div class="container-book-carousel">
-            <div class="card">
-              <a href="#"><img src="img/book2.png" class="bookImg"></a>
-                <a href="#" class="bookTitle">The JavaScript Diet</a>
-                <h6 class="bookPrice">$FREE.99</h6>
-            </div>
-        </div>
-
-<!-- End Bottom Carousels -->        
-
+<div class="product-bottom-container">
+    <div class="bottom-divider">       
+        <hr class="hr-left">
+            <h2 class="suggested-title">Suggested Books</h2>
+        <hr class="hr-right">
     </div>
+
+    <div class="gallery js-flickity" data-flickity='{ "wrapAround": true}'>
+        
+
+        <div class="gallery-cell">
+            <div class="suggested-book-carousel-card">
+                <div class="card">
+                <a href="#"><img src="img/book2.png" class="bookImg"></a>
+                    <a href="#" class="bookTitle">The JavaScript Diet</a>
+                    <a href="#"><h6 class="bookPrice">$FREE.99</h6></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-cell">
+            <div class="suggested-book-carousel-card">
+                <div class="card">
+                <a href="#"><img src="img/book2.png" class="bookImg"></a>
+                    <a href="#" class="bookTitle">The JavaScript Diet</a>
+                    <a href="#"><h6 class="bookPrice">$FREE.99</h6></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-cell">
+            <div class="suggested-book-carousel-card">
+                <div class="card">
+                <a href="#"><img src="img/book2.png" class="bookImg"></a>
+                    <a href="#" class="bookTitle">The JavaScript Diet</a>
+                    <a href="#"><h6 class="bookPrice">$FREE.99</h6></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-cell">
+            <div class="suggested-book-carousel-card">
+                <div class="card">
+                <a href="#"><img src="img/book2.png" class="bookImg"></a>
+                    <a href="#" class="bookTitle">The JavaScript Diet</a>
+                    <a href="#"><h6 class="bookPrice">$FREE.99</h6></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-cell">
+            <div class="suggested-book-carousel-card">
+                <div class="card">
+                <a href="#"><img src="img/book2.png" class="bookImg"></a>
+                    <a href="#" class="bookTitle">The JavaScript Diet</a>
+                    <a href="#"><h6 class="bookPrice">$FREE.99</h6></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-cell">
+            <div class="suggested-book-carousel-card">
+                <div class="card">
+                <a href="#"><img src="img/book2.png" class="bookImg"></a>
+                    <a href="#" class="bookTitle">The JavaScript Diet</a>
+                    <a href="#"><h6 class="bookPrice">$FREE.99</h6></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-cell">
+            <div class="suggested-book-carousel-card">
+                <div class="card">
+                <a href="#"><img src="img/book2.png" class="bookImg"></a>
+                    <a href="#" class="bookTitle">The JavaScript Diet</a>
+                    <a href="#"><h6 class="bookPrice">$FREE.99</h6></a>
+                </div>
+            </div>
+        </div>
+        
+      </div>
+
+<!-- End Suggested Carousel -->   
+
+
+    <div class="bottom-divider"> 
+        <hr class="hr-left">
+        <h2 class="bestseller-title">Bestsellers</h2>
+        <hr class="hr-right">
+    </div>
+
+    <div class="bestseller-container">
+        <div class="book-carousel-card bestseller-books">
+            <div class="card">
+              <a href="#"><img src="img/book2.png" class="bookImg"></a>
+                <a href="#" class="bookTitle">The JavaScript Diet</a>
+                <a href="#"><h6 class="bookPrice">$FREE.99</h6></a>
+            </div>
+        </div>
+
+        <div class="book-carousel-card bestseller-books">
+            <div class="card">
+              <a href="#"><img src="img/book2.png" class="bookImg"></a>
+                <a href="#" class="bookTitle">The JavaScript Diet</a>
+                <a href="#"><h6 class="bookPrice">$FREE.99</h6></a>
+            </div>
+        </div>
+
+        <div class="book-carousel-card bestseller-books">
+            <div class="card">
+              <a href="#"><img src="img/book2.png" class="bookImg"></a>
+                <a href="#" class="bookTitle">The JavaScript Diet</a>
+                <a href="#"><h6 class="bookPrice">$FREE.99</h6></a>
+            </div>
+        </div>
+
+        <div class="book-carousel-card bestseller-books">
+            <div class="card">
+              <a href="#"><img src="img/book2.png" class="bookImg"></a>
+                <a href="#" class="bookTitle">The JavaScript Diet</a>
+                <a href="#"><h6 class="bookPrice">$FREE.99</h6></a>
+            </div>
+        </div>
+    </div>
+</div>
+     
+
 </div>
 
     <!-- Footer -->
@@ -162,6 +268,7 @@
     <!-- End Footer -->
 
     <script src="javascript/index.js"></script>
+    <script src="javascript/flickity.pkgd.min.js"></script>
 
 </body>
 </html>
