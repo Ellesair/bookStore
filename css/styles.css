@@ -345,7 +345,6 @@ li.name-list-itemAR {
 /*Begin banner-image */
 
 .banner-image {
-  padding-top: ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -539,7 +538,6 @@ button.purchaseButton {
 }
 
 .allBooks-container {
-  background-color: ;
   max-width: 1000px;
   margin: auto;
   padding-bottom: 100px;
