@@ -545,3 +545,22 @@ button.purchaseButton {
   background-color: #fff;
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
+
+/* End page titles for books.html */
+
+
+/*Begin product-grid for product.html */
+
+.general-button {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border: 1px;
+  border-color: grey;
+  background-color: #fff;
+  color: black;
+  height: 30px;
+  width: 100px;
+}
