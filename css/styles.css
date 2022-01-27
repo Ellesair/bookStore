@@ -390,6 +390,7 @@ li.name-list-itemAR {
   width: auto;
   display: flex;
   justify-content: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2)
 }
 
 .bookTitle {
