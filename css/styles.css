@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #fff;
+  padding-bottom: 20px;
 }
 
 /* Begin Navbar CSS */
@@ -341,3 +341,208 @@ li.name-list-itemAR {
   padding-left: 20px;
 }
 
+
+/*Begin banner-image */
+
+.banner-image {
+  padding-top: ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  z-index: 2;
+ /* position: sticky;
+  top: 50px; */
+}
+
+/*End banner-image */
+
+
+/* Begin Product Cards */
+
+.container-bookCards {
+  width: 200px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: 
+  "bookImg"
+  "bookTitle"
+  "bookPrice"
+  "buyNowBtn"
+  "addCartBtn";
+}
+
+.card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: none !important;
+}
+
+.bookImg {
+  grid-area: bookImg;
+  height: 200px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.bookTitle {
+  grid-area: bookTitle;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: black;
+}
+
+.bookTitle:hover {
+  font-weight:bold;
+  text-decoration: none;
+  margin: auto;
+  color: black;
+}
+
+.bookPrice {
+  grid-area: bookPrice;
+  display: flex;
+  justify-content: center;
+}
+
+.buyNowBtn {
+  grid-area: buyNowBtn;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #46b8da;
+  color: white;
+  height: 30px;
+  width: 100px;
+  margin: 5px;
+}
+
+.addCartBtn {
+  grid-area: addCartBtn;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background-color: #169db3;
+  color: white;
+  height: 30px;
+  width: 100px;
+}
+
+button.purchaseButton {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px;
+  border-radius: 3px;
+}
+/* End Product Cards */
+
+
+/* Begin All Genres Link List books.html */
+
+.hrBooks {
+  border: 1px solid #c39b08;
+  width: 90%;
+  max-width: 900px;
+}
+
+.allGenre-Links {
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Rajdhani, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.allGenre-Links a {
+  color: black;
+  font-size: 18px;
+  padding-right: 5px;
+
+}
+
+.allGenre-Links a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+
+.allGenre-Links li::after {
+  content: " | ";
+  float: center;
+  color: black;
+  padding-left: 7px;
+  padding-right: 7px;
+  font-weight: normal;
+  pointer-events: auto;
+  cursor: default;
+}
+
+#lastItem li::after {
+  display: none;
+}
+
+/* End All Genres Link List books.html */
+
+
+/* Begin product-display for books.html */
+
+.product-display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* End product-display for books.html */
+
+
+/* Begin page titles for books.html */
+
+.allBooksTitle-container {
+  font-family: Rajdhani, sans-serif;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 70px;
+  margin: -50px;
+}
+
+.allGenre-title {
+  font-family: Rajdhani, sans-serif;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.allBooks-container {
+  background-color: ;
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 100px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
