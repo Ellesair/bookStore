@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: auto;
   padding-bottom: 20px;
 }
 
@@ -220,6 +220,41 @@ svg {
     justify-content: center;
   }
 
+  div.allBooks-container {
+    max-width: 600px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  div.product-grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bookimg-closeup {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+  }
+
+  img.banner-image {
+    display: none;
+  }
+
+  img.banner-small {
+    display: block;
+    margin-top: -50px;
+  }
+
+
   /*Begin Mobile Menu Style */
 
   .vertical-menu {
@@ -352,8 +387,8 @@ li.name-list-itemAR {
   max-width: 100%;
   height: auto;
   z-index: 2;
- /* position: sticky;
-  top: 50px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*End banner-image */
@@ -550,14 +585,23 @@ button.purchaseButton {
   font-size: 25px;
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 
 .allBooks-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 1000px;
   margin: auto;
   padding-bottom: 100px;
   background-color: #fff;
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.banner-small {
+  display: none;
 }
 
 /* End page titles for books.html */
@@ -570,6 +614,7 @@ button.purchaseButton {
   grid-template-columns: 0.8fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: "product-visual product-info";
+  margin: auto;
 }
 
 .product-visual {
@@ -608,6 +653,9 @@ button.purchaseButton {
   padding-right: 20px;
   padding-left: 20px;
   padding-top: 40px;
+}
+.prod-button-container {
+  display: flex;
 }
 
 button.general-button {
@@ -648,7 +696,9 @@ button.general-button:focus {
 
 .product-bottom-container {
   padding-top: 50px;
-  margin: auto;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
   padding-right: 0px;
 }
 
@@ -823,8 +873,8 @@ body { font-family: sans-serif; }
   transform: translateY(-50%);
 }
 
-.flickity-prev-next-button.previous { left: 10px; }
-.flickity-prev-next-button.next { right: 10px; }
+.flickity-prev-next-button.previous { left: 0px; }
+.flickity-prev-next-button.next { right: 0px; }
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
