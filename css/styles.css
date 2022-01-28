@@ -260,6 +260,30 @@ svg {
   /* End Navbar CSS */
 }
 
+/*Begin Wave Banner*/
+
+/* .waves {
+  display: block;
+  height: 52px;
+  background-image: ;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center center;
+
+} */
+
+.wave-container {
+
+}
+
+.wave-container > svg {
+  display: block;
+  height: 52px;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center center;
+} 
+
 /* Begin Footer Bar */
 
 .footer-container {
@@ -341,3 +365,13 @@ li.name-list-itemAR {
   padding-left: 20px;
 }
 
+ .imgs {
+  width: 300px;
+  height: auto;
+}
+
+svg {
+  width:100%;
+  height:100%;
+  margin:0;
+}
