@@ -52,50 +52,50 @@
         <h1 class="heading"> <strong>Book Entry Form</strong> </h1>
       </div>
 
-    <form>
+<form name="myForm" method="POST" onsubmit="return validateForm()">
 
       <!--Form row Book Title, Author, and ProductDescription-->
         <div class="form-row">
         <div class="form-group col-lg-6">
           <label for="formInput1"><h5>Book Title</h5></label>
-          <input type="text" class="form-control" id="formInput1" placeholder="Enter book title here...">
+          <input type="text" class="form-control" id="formInput1" placeholder="Enter book title here..." name="title" required>
         </div>
 
         <div class="form-group col-lg-6">
             <label for="formInput2"><h5>Author</h5></label>
-            <input type="text" class="form-control" id="formInput2" placeholder="Enter author name here...">
+            <input type="text" class="form-control" id="formInput2" placeholder="Enter author name here..." name="author" required>
         </div>
         </div>
 
         <div class="form-group">
         <label for="formInput3"><h5>Product Description</h5></label>
-        <textarea type="textarea" class="form-control" id="formInput3" rows='5' placeholder="Enter product description here..."></textarea>
+        <textarea type="textarea" class="form-control" id="formInput3" rows='5' placeholder="Enter product description here..." name="description" required></textarea>
         </div>
 
         <!--FOrm row Publisher and Publication Date-->
         <div class="form-row">
                 <div class="form-group col-lg-6">
                     <label for="formInput10"><h5>Publisher</h5></label>
-                    <input type="text" class="form-control" id="formInput10" placeholder="Enter publisher here...">
+                    <input type="text" class="form-control" id="formInput10" placeholder="Enter publisher here..." name="publisher" required>
                 </div>
                 <div class="form-group col-lg-6">
                     <label for="formInput5"><h5>Publication Date</h5></label>
-                    <input type="text" class="form-control" id="formInput5" placeholder="Enter publication date here...">
+                    <input type="text" class="form-control" id="formInput5" placeholder="Enter publication date here..." name="publicationDate" required>
                 </div>
         </div>
         <!--Form row Book Dimensions and Page Sample-->
         <div class="form-row">
             <div class="form-group col-lg-6">
             <label for="formInput6"><h5>Dimensions</h5></label>
-            <input type="text" class="form-control" id="formInput6" placeholder="L">
-            <input type="text" class="form-control" id="formInput6" placeholder="W">
-            <input type="text" class="form-control" id="formInput6" placeholder="H">
-            <input type="text" class="form-control" id="formInput6" placeholder="Weight">
+            <input type="text" class="form-control" id="formInput6" placeholder="L" name="length" required>
+            <input type="text" class="form-control" id="formInput6" placeholder="W" name="width" required>
+            <input type="text" class="form-control" id="formInput6" placeholder="H" name="height" required>
+            <input type="text" class="form-control" id="formInput6" placeholder="Weight" name="weight" required>
             </div>
 
             <div class="form-group col-lg-6">
                 <label for="formInput7"><h5>Page Sample</h5></label>
-                <textarea type="textarea" class="form-control" id="formInput7" rows='10' placeholder="Enter page sample here..."></textarea>
+                <textarea type="textarea" class="form-control" id="formInput7" rows='10' placeholder="Enter page sample here..." name="sample" required></textarea>
             </div>
         </div>
 
@@ -104,18 +104,18 @@
             <div class="form-group col-lg-4">
             <label for="formInput8"><h5>Cover Type</h5></label>
             <br>
-                <label class="radio-inline"><input type="radio" name="cover">Hardcover</label>
-                <label class="radio-inline"><input type="radio" name="cover">Softcover</label>
+                <label class="radio-inline"><input type="radio" name="cover" required>Hardcover</label>
+                <label class="radio-inline"><input type="radio" name="cover" required>Softcover</label>
             </div>
 
             <div class="form-group col-lg-4">
                 <label for="formInput9"><h5>Price</h5></label>
-                <input type="text" class="form-control" id="formInput9" placeholder="$X.XX">
+                <input type="text" class="form-control" id="formInput9" placeholder="$X.XX" name="price" required>
             </div>
 
             <div class="form-group col-lg-4">
                 <label for="formInput4"><h5>Number of Pages</h5></label>
-                <input type="text" class="form-control" id="formInput4" placeholder="Enter number of pages here...">
+                <input type="text" class="form-control" id="formInput4" placeholder="Enter number of pages here..." name="pages" required>
             </div>
         </div>
 
@@ -124,7 +124,7 @@
         <button type="submit" class="btn btn-primary mb-3 justify-content: center">Submit Entry</button>
         </div>
 
-      </form>
+    </form>
 
  <!-- Footer -->
 
