@@ -297,27 +297,8 @@ svg {
 
 /*Begin Wave Banner*/
 
-/* .waves {
-  display: block;
-  height: 52px;
-  background-image: ;
-  background-repeat: repeat-x;
-  background-size: contain;
-  background-position: center center;
 
-} */
 
-.wave-container {
-
-}
-
-.wave-container > svg {
-  display: block;
-  height: 52px;
-  background-repeat: repeat-x;
-  background-size: contain;
-  background-position: center center;
-} 
 
 /* Begin Footer Bar */
 
