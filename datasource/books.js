@@ -9,7 +9,7 @@ export const bookInventory = [
       publisher: "Luna Attic Publishing",
       pgCount: 69,
       pubDate: "Jan 28, 2022",
-      image: "/img/book1.png",
+      image: "./img/book1.png",
     },
     {
       title: "The Javascript Diet",
@@ -21,7 +21,7 @@ export const bookInventory = [
       publisher: "MadHouse",
       pgCount: 189,
       pubDate: "Jan 28, 2022",
-      image: "/img/book2.png",
+      image: "./img/book2.png",
     },
     {
       title: "The Javascript Diet",
@@ -33,6 +33,6 @@ export const bookInventory = [
       publisher: "MadHouse",
       pgCount: 189,
       pubDate: "Jan 28, 2022",
-      image: "/img/book2.png",
+      image: "./img/book2.png",
     },
   ];
