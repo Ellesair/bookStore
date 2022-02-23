@@ -6,6 +6,10 @@ body {
 
 /* Begin Navbar CSS */
 
+.text-center {
+  padding-bottom: 100px;
+}
+
 .hamburgerLinks {
   margin: 0px;
 }
@@ -135,7 +139,6 @@ button {
   height: 44px;
 }
 
-
 svg {
   color: #fff;
   fill: currentColor;
@@ -147,7 +150,6 @@ svg {
 .fas {
   color: #fff;
 }
-
 
 @media screen and (max-width: 1000px) {
   form {
@@ -254,7 +256,6 @@ svg {
     display: block;
     margin-top: -50px;
   }
-
 
   /*Begin Mobile Menu Style */
 
@@ -373,7 +374,6 @@ li.name-list-itemEO {
 }
 
 li.name-list-itemAR {
-
   list-style-image: url("");
 }
 
@@ -409,7 +409,6 @@ svg {
 
 /*End banner-image */
 
-
 /* Begin Product Cards */
 
 .container-bookCards {
@@ -417,12 +416,12 @@ svg {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(5, auto);
-  grid-template-areas: 
-  "bookImg"
-  "bookTitle"
-  "bookPrice"
-  "buyNowBtn"
-  "addCartBtn";
+  grid-template-areas:
+    "bookImg"
+    "bookTitle"
+    "bookPrice"
+    "buyNowBtn"
+    "addCartBtn";
 }
 
 .card {
@@ -441,7 +440,7 @@ svg {
   width: auto;
   display: flex;
   justify-content: center;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2)
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .bookTitle {
@@ -458,7 +457,7 @@ svg {
 }
 
 .bookTitle:hover {
-  font-weight:bold;
+  font-weight: bold;
   text-decoration: none;
   margin: auto;
   color: black;
@@ -517,7 +516,6 @@ button.purchaseButton {
 }
 /* End Product Cards */
 
-
 /* Begin All Genres Link List books.html */
 
 .hrBooks {
@@ -541,7 +539,6 @@ button.purchaseButton {
   color: black;
   font-size: 18px;
   padding-right: 5px;
-
 }
 
 .allGenre-Links a:hover {
@@ -549,7 +546,6 @@ button.purchaseButton {
   color: black;
   font-weight: bold;
 }
-
 
 .allGenre-Links li::after {
   content: " | ";
@@ -568,7 +564,6 @@ button.purchaseButton {
 
 /* End All Genres Link List books.html */
 
-
 /* Begin product-display for books.html */
 
 .product-display {
@@ -583,7 +578,6 @@ button.purchaseButton {
 }
 
 /* End product-display for books.html */
-
 
 /* Begin page titles for books.html */
 
@@ -621,7 +615,6 @@ button.purchaseButton {
 }
 
 /* End page titles for books.html */
-
 
 /*Begin product-grid for product.html */
 
@@ -707,7 +700,6 @@ button.general-button:focus {
 
 /* End product-grid for product.html */
 
-
 /* Begin Suggested Books / Bestseller hr Styling */
 
 .product-bottom-container {
@@ -749,7 +741,6 @@ button.general-button:focus {
 }
 
 .hr-right {
-
   border: 1px solid #c39b08;
   width: 100%;
   max-width: 100%;
@@ -772,12 +763,15 @@ button.general-button:focus {
 
 /* End Suggested Books / Bestseller hr Styling */
 
-
 /* Begin Bestseller Carousel on product.html */
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-body { font-family: sans-serif; }
+body {
+  font-family: sans-serif;
+}
 
 .carousel {
   background: rgb(255, 255, 255);
@@ -786,7 +780,6 @@ body { font-family: sans-serif; }
 .gallery-cell {
   padding-right: 20px;
 }
-
 
 /* cell number */
 .gallery-cell:before {
@@ -802,14 +795,15 @@ body { font-family: sans-serif; }
   margin-bottom: 20px;
   margin-right: 50px;
   margin-left: 50px;
-} 
-
+}
 
 .flickity-enabled {
   position: relative;
 }
 
-.flickity-enabled:focus { outline: none; }
+.flickity-enabled:focus {
+  outline: none;
+}
 
 .flickity-viewport {
   overflow: hidden;
@@ -828,9 +822,9 @@ body { font-family: sans-serif; }
 .flickity-enabled.is-draggable {
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .flickity-enabled.is-draggable .flickity-viewport {
@@ -860,7 +854,7 @@ body { font-family: sans-serif; }
 
 .flickity-button:focus {
   outline: none;
-  box-shadow: 0 0 0 5px #19F;
+  box-shadow: 0 0 0 5px #19f;
 }
 
 .flickity-button:active {
@@ -889,8 +883,12 @@ body { font-family: sans-serif; }
   transform: translateY(-50%);
 }
 
-.flickity-prev-next-button.previous { left: 0px; }
-.flickity-prev-next-button.next { right: 0px; }
+.flickity-prev-next-button.previous {
+  left: 0px;
+}
+.flickity-prev-next-button.next {
+  right: 0px;
+}
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
@@ -922,7 +920,9 @@ body { font-family: sans-serif; }
   line-height: 1;
 }
 
-.flickity-rtl .flickity-page-dots { direction: rtl; }
+.flickity-rtl .flickity-page-dots {
+  direction: rtl;
+}
 
 .flickity-page-dots .dot {
   display: inline-block;
