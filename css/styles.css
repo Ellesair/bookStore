@@ -297,8 +297,53 @@ svg {
   /* End Navbar CSS */
 }
 
-/*Begin Wave Banner*/
+/*Begin index page*/
+.vividworknav {
+  width: auto%;
+  height: auto;
+  float: left;
+  padding: 0;
+  position: relative;
+  background-color: black;
+}
 
+.vividworknav:hover img {
+  opacity: 0.3;
+}
+
+.vividworknav:hover .work-text-content {
+  opacity: 1; 
+}
+
+.vividworknav img {
+  padding: 0;
+  width: 100%;
+  display: block;
+  opacity: 1;
+}
+
+.vividworknav img,
+.work-text-content {
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+.work-text-content {
+  position: absolute;
+  color: white;
+  left: 0;
+  top: 25%;
+  right: 0;
+  bottom: 0;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0;
+}
+
+
+/*End index page*/
 
 
 
