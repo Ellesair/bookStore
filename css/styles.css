@@ -15,6 +15,31 @@ body {
   padding-bottom: 100px;
 }
 
+.index-solid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.index-divider {
+  border: 3px solid #c39b08;
+  width: 90%;
+  max-width: 90%;
+  max-height: 500px;
+  padding-bottom: 300px;
+}
+
+.index-bottom-divider {
+  border: 1px solid #c39b08;
+  width: 90%;
+  max-width: 90%;
+}
+
+.index-bottom-div {
+  padding-bottom: 100px;
+}
 
 /* Begin Navbar CSS */
 
