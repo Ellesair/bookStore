@@ -4,6 +4,18 @@ body {
   
 }
 
+.imgs {
+  max-width: 200px;
+  height: auto;
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+#bio-container {
+  padding-bottom: 100px;
+}
+
+
 /* Begin Navbar CSS */
 
 .text-center {
