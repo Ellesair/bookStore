@@ -12,18 +12,14 @@ newItemForm.addEventListener('submit', (event) => {
 
     // Select the inputs
     const newBookTitle = document.querySelector('#formInput1');
-    const newBookDescription = document.querySelector('#formInput3');
-    const newBookAuthor = document.querySelector('#formInput2');
-    const newBookPublisher = document.querySelector('#formInput10');
+    const newBookDescription = document.querySelector('#formInput2');
+    const newBookAuthor = document.querySelector('#formInput3');
+    const newBookPublisher = document.querySelector('#formInput4');
     const newPublicationDate = document.querySelector('#formInput5');
-    const newBookLength = document.querySelector('#formInput6');
-    const newBookWidth = document.querySelector('#formInput11');
-    const newBookHeight = document.querySelector('#formInput12');
-    const newBookWeight = document.querySelector('#formInput13');
-    const newPageSample = document.querySelector('#formInput7');
-    const newBookPrice = document.querySelector('#formInput9');
-    const newBookCover = document.querySelector('#formInput8');
-    const newBookPages = document.querySelector('#formInput4');
+    const newBookPrice = document.querySelector('#formInput6');
+    const newBookIsbn = document.querySelector('#formInput7');
+    const newBookImage = document.querySelector('#formInput8');
+    const newBookPageCount = document.querySelector('#formInput9');
 
 
     // Get the values of the inputs
@@ -31,15 +27,11 @@ newItemForm.addEventListener('submit', (event) => {
     const description = newBookDescription.value;
     const author = newBookAuthor.value;
     const publisher = newBookPublisher.value; 
-    const date = newPublicationDate.value;
-    const length = newBookLength.value; 
-    const width = newBookWidth.value;
-    const height = newBookHeight.value;
-    const weight = newBookWeight.value;
-    const sample = newPageSample.value;
+    const pubDate = newPublicationDate.value;
     const price = newBookPrice.value;
-    const coverType = newBookCover.value;
-    const pages = newBookPages.value;
+    const isbn  = newBookIsbn.value;
+    const pgCount = newBookPageCount.value;
+    const image = newBookImage.value;
 
     
     // Validation code here
@@ -67,45 +59,15 @@ newItemForm.addEventListener('submit', (event) => {
 
             return false;
          }
-         if( document.myForm.date.value == "" ) {
+         if( document.myForm.pubDate.value == "" ) {
             alert( "Please provide the publication date!" );
             document.myForm.date.focus();
             return false;
          }
-         if( document.myForm.length.value == "" ) {
-            alert( "Please provide the book length!" );
-            document.myForm.length.focus();
-            return false;
-         }
-         if (document.myForm.width.value == "") {
-            alert("Please provide the book width");
-            document.myForm.width.focus();
-            return false;
 
-         }
-         if( document.myForm.height.value == "" ) {
-            alert( "Please provide the book height!" );
-            document.myForm.height.focus();
-            return false;
-         }
-         if( document.myForm.weight.value == "" ) {
-            alert( "Please provide the book weight!" );
-            document.myForm.weight.focus();
-            return false;
-         }
-         if( document.myForm.sample.value == "" ) {
-            alert( "Please provide a sample page!" );
-            document.myForm.sample.focus();
-            return false;
-         }
          if( document.myForm.price.value == "" ) {
             alert( "Please provide the book price!" );
             document.myForm.price.focus();
-            return false;
-         }
-         if( document.myForm.coverType.value == "" ) {
-            alert( "Please provide the book cover type!" );
-            document.myForm.coverType.focus();
             return false;
          }
          /*if( document.myForm.publisher.value == "" || isNaN( document.myForm.Zip.value ) ||
@@ -115,18 +77,29 @@ newItemForm.addEventListener('submit', (event) => {
             document.myForm.Zip.focus();
             return false;
          }*/
-         if( document.myForm.pages.value == "" ) {
+         if( document.myForm.pgCount.value == "" ) {
             alert( "Please provide the number of pages!" );
-            document.myForm.pages.focus();
+            document.myForm.pgCount.focus();
             return false;
          }
+         if( document.myForm.isbn.value == "" ) {
+            alert( "Please provide the ISBN!" );
+            document.myForm.isbn.focus();
+            return false;
+         }
+         if( document.myForm.image.value == "" ) {
+            alert( "Please provide an image!" );
+            document.myForm.image.focus();
+            return false;
+         }
+
          return( true );
      }
     
     
 
     // Add the item to the ItemsController
-    itemsController.addItem(title, author, description, publisher, date, length, width, height, weight, sample, price, coverType, pages);
+    itemsController.addItem(title, author, price, description, isbn, publisher, pgCount, pubDate, image);
 
     // Clear the form 
     newBookTitle.value = '';
@@ -134,12 +107,8 @@ newItemForm.addEventListener('submit', (event) => {
     newBookAuthor.value = '';
     newBookPublisher.value = ''; 
     newPublicationDate.value = '';
-    newBookLength.value = ''; 
-    newBookWidth.value = '';
-    newBookHeight.value = '';
-    newBookWeight.value = '';
-    newPageSample.value = '';
+    newBookIsbn.value = '';
     newBookPrice.value = '';
-    newBookCover.value = '';
-    newBookPages.value = '';  
+    newBookImage.value = '';
+    newBookPageCount.value = '';  
 });
