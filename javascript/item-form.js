@@ -70,13 +70,6 @@ newItemForm.addEventListener('submit', (event) => {
             document.myForm.price.focus();
             return false;
          }
-         /*if( document.myForm.publisher.value == "" || isNaN( document.myForm.Zip.value ) ||
-            document.myForm.Zip.value.length != 5 ) {
-            
-            alert( "Please provide a zip in the format #####." );
-            document.myForm.Zip.focus();
-            return false;
-         }*/
          if( document.myForm.pgCount.value == "" ) {
             alert( "Please provide the number of pages!" );
             document.myForm.pgCount.focus();
